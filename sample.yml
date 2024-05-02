@@ -1,0 +1,8 @@
+- name: Sample playbook
+  hosts: localhost
+  tasks:
+    - name: Get the payload from the API
+      uri:
+        url: "/some-url"
+        method: GET
+        user: " {{ username }}"
